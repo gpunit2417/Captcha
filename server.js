@@ -55,14 +55,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Session setup
 app.use(session({
-    secret: 'your_secret_key', 
+    secret: 'gdtvbiidh-21332', 
     resave: false,
     saveUninitialized: true
 }));
 
 // Serve index.html at root URL
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Generate captcha
