@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Session setup
 app.use(session({
-    secret: 'gdtvbiidh-21332', 
+    secret: 'gdtvbiidh-21332',
     resave: false,
     saveUninitialized: true
 }));
